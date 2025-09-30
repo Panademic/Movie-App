@@ -3,8 +3,8 @@ import Search from './components/Search.jsx'
 import MovieCard from './components/MovieCard.jsx';
 import { useDebounce } from 'react-use';
 
-const API_BASE_URL = 'https://api.themoviedb.org/3';
 
+const API_BASE_URL = 'https://api.themoviedb.org/3';
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
   const API_OPTIONS = {
@@ -47,10 +47,6 @@ function App() {
       }
 
       setMovieList(data.results || []);
-
-      // if(querry && data.results.length>0){
-      //   await updateSearchCount(querry, data.results[0]);
-      // } 
     
     }catch(error){
       console.log("Fetch Error", error);
@@ -91,7 +87,7 @@ function App() {
           )
           }
 
-          {/* {errormessage && <p className='text-red-500'>{errormessage}</p>} */}
+          {errormessage && <p className='text-red-500'>{errormessage}</p>}
         </section>
 
         
