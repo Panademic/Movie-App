@@ -1,0 +1,1 @@
+I have made a very simple movie app using react.js. I have learnt how to fetch api and how to fetch the data and show it to your website's user interface. This is my first react project. There are many thngs i want to add to it later on. 
